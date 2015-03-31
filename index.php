@@ -72,14 +72,14 @@
                     <h3><a href="#">SafariCraft</a></h3>
                     <a href="reference/safaricraft.png"><img src="reference/safaricraft_nahled.png" alt="Náhled"></a>
                     <p>Tomuto webu jsem dělal šablonu pro redakční systém Wordpress.</p>
-                    <p>Použité technologie: HTML5, CSS3</p>
+                    <p>Použité technologie: HTML, CSS</p>
                     <br style="clear: both">
                 </div>
                 <div class="reference">
                     <h3><a href="#">Black Servers</a></h3>
                     <a href="reference/black-servers.png"><img src="reference/black-servers_nahled.png" alt="Náhled"></a>
                     <p>Tomuto webu jsem dělal šablonu podle návrhu majitele webu.</p>
-                    <p>Použité technologie: HTML5, CSS3</p>
+                    <p>Použité technologie: HTML, CSS</p>
                     <br style="clear: both">
                 </div>
             </article>
@@ -87,7 +87,7 @@
             <article>
                 <div style="text-align: center;">
                     <a href="https://www.facebook.com/ondracek.roman"><img src="ikony/facebook.png" alt="Facebook"></a>
-                    <a href="https://github.com/Roman3349"><img src="ikony/github_2.png" alt="GitHub"></a>
+                    <a href="https://github.com/Roman3349"><img src="ikony/github.png" alt="GitHub"></a>
                     <a href="skype:ondracek.roman?chat"><img src="ikony/skype.png" alt="Skype"></a>
                     <a href="mailto:ondracek.roman@centrum.cz"><img src="ikony/email.png" alt="Email"></a>
                 </div>

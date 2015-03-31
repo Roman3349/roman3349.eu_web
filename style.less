@@ -1,16 +1,35 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Play:400,700&subset=latin,latin-ext);
+
+@color1: #0099ff;
+@color2: #eeeeee;
+@font1: 'Open Sans', sans-serif;
+@font2: 'Play', sans-serif;
+
+.centerText() {
+    text-align: center;
+}
+.centerElement(@size: 0) {
+    margin: @size auto;
+}
+.center(@size: 0) {
+    .centerText();
+    .centerElement(@size);
+}
+
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: @font1;
     font-size: 12pt;
     margin: 0;
+    background-color: @color2;
 }
 header {
     padding: 20pt 0;
-    margin: 0 auto;
     width: 100%;
-    background-color: #007fff;
-    text-align: center;
-    color: #fff;
+    background-color: @color1;
+    .center();
+    color: @color2;
+    font-family: @font2;
     h1 {
         font-size: 32pt;
         line-height: 32pt;
@@ -22,8 +41,9 @@ header {
 }
 nav {
     width: 100%;
-    background-color: #007fff;
-    text-align: center;
+    background-color: @color1;
+    .centerText();
+    font-family: @font2;
     ul {
         margin: 0;
         display: inline-block;
@@ -36,19 +56,18 @@ nav {
         }
     }
     a {
-
-        color: white;
+        color: @color2;
         &:hover {
-            color: black;
+            color: contrast(@color2);
         }
     }
 }
 section {
     header {
-        text-align: center;
+        .centerText();
         font-size: 16pt;
-        color: #007fff;
-        background-color: #fff;
+        color: @color1;
+        background-color: @color2;
         margin-top: 12pt;
         padding: 0;
         text-decoration: none;
@@ -57,21 +76,21 @@ section {
     article {
         width: 75%;
         padding: 12pt;
-        margin: 0 auto;
+        .centerElement();
     }
 }
 footer {
     width: 100%;
-    text-align: center;
-    padding: 10pt 0;
-    background-color: #007fff;
-    color: #fff;
+    .centerText();
+    padding: 7pt 0;
+    background-color: @color1;
+    color: @color2;
     a {
-        color: #fff;
+        color: @color2;
     }
 }
 a {
-    color: #007fff;
+    color: @color1;
     text-decoration: none;
     font-weight: bold;
 }
@@ -79,7 +98,7 @@ a {
     margin: 10pt 0;
     h3 {
         font-size: 14pt;
-        color: #007fff;
+        color: @color1;
     }
     img {
         width: 200px;
