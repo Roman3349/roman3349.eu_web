@@ -1,3 +1,12 @@
+<?php
+
+function getAge() {
+    $from = new DateTime('1998-06-06');
+    $to   = new DateTime('today');
+    return $from->diff($to)->y;
+}
+
+?>
 <!DOCTYPE html>
 <html lang='cs'>
     <head>
@@ -25,7 +34,7 @@
         <section>
             <header>O mně</header>
             <article>
-                <p>Vítejte na mém webu. Jmenuji se Roman Ondráček a je mi 16 let. Jsem kodér, programátor a student 
+                <p>Vítejte na mém webu. Jmenuji se Roman Ondráček a je mi <?= getAge(); ?> let. Jsem kodér, programátor a student 
                     <a href='http://www.gymbos.cz/'>Gymnázia Boskovice</a>. 
                     V podledních měsících se věnuji vývoji webových aplikacích.
                     Účastním se projektu <a href='http://wifileaks.cz/'>Wifileaks</a>
