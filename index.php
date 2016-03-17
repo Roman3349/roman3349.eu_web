@@ -63,7 +63,7 @@ function getAge() {
                     <br style="clear: both">
                 </div>
                 <div class="reference">
-                    <h3><a href="http://www.armycraft.eu/">ArmyCraft</a></h3>
+                    <h3><a href="#">ArmyCraft</a></h3>
                     <a href="reference/armycraft.png"><img src="reference/armycraft_nahled.png" alt="Náhled"></a>
                     <p>Tomuto webu jsem dělal vlastní redakční systém a šablonu.
                         Redakční systém je napojen na MySQL a je objektový.</p>
@@ -71,7 +71,7 @@ function getAge() {
                     <br style="clear: both">
                 </div>
                 <div class="reference">
-                    <h3><a href="http://www.crazymine.eu/">CrazyMine</a></h3>
+                    <h3><a href="#">CrazyMine</a></h3>
                     <a href="reference/crazymine.png"><img src="reference/crazymine_nahled.png" alt="Náhled"></a>
                     <p>Tomuto webu jsem dělal šablonu.</p>
                     <p>Použité technologie: HTML5, CSS3</p>
