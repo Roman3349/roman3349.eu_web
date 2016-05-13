@@ -1,16 +1,7 @@
-<?php
-
-function getAge() {
-    $from = new DateTime('1998-06-06');
-    $to   = new DateTime('today');
-    return $from->diff($to)->y;
-}
-
-?>
 <!DOCTYPE html>
 <html lang='cs'>
     <head>
-        <base href='/'>
+        <!--<base href='/'>-->
         <meta charset='UTF-8'>
         <meta name='author' content='Roman Ondráček'>
         <meta name='robots' content='index, follow'>
@@ -34,7 +25,7 @@ function getAge() {
         <section>
             <header>O mně</header>
             <article>
-                <p>Vítejte na mém webu. Jmenuji se Roman Ondráček a je mi <?= getAge(); ?> let. Jsem kodér, programátor a student 
+                <p>Vítejte na mém webu. Jmenuji se Roman Ondráček a je mi <span id='age'></span> let. Jsem kodér, programátor a student 
                     <a href='http://www.gymbos.cz/'>Gymnázia Boskovice</a>. 
                     V podledních měsících se věnuji vývoji webových aplikacích.
                     Účastním se projektu <a href='http://wifileaks.cz/'>Wifileaks</a>
@@ -103,5 +94,6 @@ function getAge() {
             </article>
         </section>
         <footer>&copy; 2014 Roman Ondráček</footer>
+	<script src='script.js' type='text/javascript'></script>
     </body>
 </html>
